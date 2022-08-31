@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> {{ pick }}은 {{ pick|length}}글자 </p>
+    <p> {{ foods|join:", "}}</p>
+
+    <p>메뉴판</p>
+    <ul>
+        {% for food in foods %}
+          <li>{{ food }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href=" {% url 'index' %}"> 뒤로 </a>
+
+    {% comment "" %}
+        여러줄 주석인데요
+        시진핑 주석은 아닙니다
+        확장프로그램 까시고 comment 입력하시면 이렇게 주석 사용할 수 있어요
+        문법이 직관적이지 않아서 꽤나 골치 아프네요 DTL
+        뜬금없지만 어제 블랙핑크 MTV 영상라는 게시글 제목이 있었는데
+        장고 MTV 구조를 떠올린 저는 장고를 사랑하는 걸지도 모르겠습니다
+        그럼 Adios!
+    {% endcomment %}
+</body>
+</html>

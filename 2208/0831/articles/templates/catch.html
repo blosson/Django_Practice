@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block content %}
+      <h1>Catch</h1>
+      <h2>데이터를 여기서 받아버리겠습니다~~ 데이터는 {{ message }}!!</h2>
+      <a href={% url 'throw' %}>다시 데이터 던지러 가셔야죠</a>
+    {% endblock content %}
+</body>
+</html>
