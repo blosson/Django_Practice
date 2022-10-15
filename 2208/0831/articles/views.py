@@ -41,4 +41,7 @@ def hello(request, name):
         'name' : name
     }
     return render(request, 'hello.html', context)
+
     
+
+
